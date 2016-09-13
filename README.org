@@ -1,0 +1,5 @@
+* Java Scaffold
+Some Java scaffold projects.
+
+* Log
+- [2016-09-13]: prometheus_java_client_scaffold.
