@@ -1,0 +1,23 @@
+#+AUTHOR: wanglifeng
+#+TITLE: Prometheus Java Client
+
+* Prometheus Java Client
+This is a scaffold project illustrate usage of Prometheus Java Client.
+
+* Four metric types
+- Counter :: A counter is a cumulative metric that represents a single numerical value that only ever goes up.
+
+- Gauge :: A gauge is a metric that represents a single numerical value that can arbitrarily go up and down.
+
+- Histogram :: A histogram samples observations (usually things like request durations or response sizes) and counts them in configurable buckets. It also provides a sum of all observed values.
+
+- Summary :: Similar to a histogram, a summary samples observations(usually things like request durations and response size). While it also provides a total count of observations and a sum of all observed values, it calculates configurable quantiles over a sliding time window.
+
+* Project structure
+This project is based on Spring Boot.
+
+* Build and Run
+#+BEGIN_SRC sh
+mvn clean package
+java -jar PrometheusJavaClient-0.0.1-RELEASE.jar
+#+END_SRC
